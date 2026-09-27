@@ -138,14 +138,14 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/062091c86b4e20769c75fb8a1af3bf5a.loader.js'
+            unityLoader.src = 'Build/b49823c6f64d3383d2952d330f55a790.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/6f1918ec440a8a8c721767abd7550772.data.unityweb',
-                        frameworkUrl: 'Build/ba61578c94c4e1db7cd9d6e8bb3bdc18.framework.js.unityweb',
-                        codeUrl: 'Build/b27962788d11175ace6425a3eccb7397.wasm.unityweb',
+                        dataUrl: 'Build/601bea3cd23cdd00417b5125e57f6c3d.data.unityweb',
+                        frameworkUrl: 'Build/8c975b6d6dcc5208daed6689358a2c14.framework.js.unityweb',
+                        codeUrl: 'Build/175be8945df5c65a5efc04702568fcb4.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'DefaultCompany',
                         productName: 'Jigsaw',
